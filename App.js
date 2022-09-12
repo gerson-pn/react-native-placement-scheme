@@ -5,11 +5,13 @@ import { View, Text } from "react-native"
 class App extends Component {
   render() {
     return (
-      <View style={{backgroundColor:'black'}}>
-        <View style={{ width: 100, height: 50, backgroundColor: 'red' }}>
-          <Text style={{ color: 'white' }}>Elemento</Text>
-        </View>
-      </View>
+      <>
+        <View style={{ flex: 1, backgroundColor: 'red' }}></View>
+
+        <View style={{ flex: 1.75, backgroundColor: 'yellow' }}></View>
+        
+        <View style={{ flex: 0.25, backgroundColor: 'green' }}></View>
+      </>
     )
   }
 }
